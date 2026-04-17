@@ -1,6 +1,6 @@
 # Jeffrey W. Small
 
-![Jeffrey Small](jeffhd.jpg)
+<img src="jeffhd.jpg" alt="Jeffrey Small" width="200">
 
 **VP Engineering & CTO | AI Systems | Product Engineering | San Francisco**
 
