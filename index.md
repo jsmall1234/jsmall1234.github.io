@@ -1,5 +1,7 @@
 # Jeffrey W. Small
 
+![Jeffrey Small](jeffhd.jpg)
+
 **VP Engineering & CTO | AI Systems | Product Engineering | San Francisco**
 
 ---
