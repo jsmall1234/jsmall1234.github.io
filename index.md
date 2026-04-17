@@ -10,7 +10,7 @@
 
 I'm a software engineer who became an engineering leader, and I've never really stopped being both.
 
-I've been building software since 1985, starting as the sole developer on a 2D CAD product at Autodesk, growing that into a 13-person team, and eventually leading engineering organizations of 100+ people at companies like Autodesk, Blackboard, and Talkmap. Along the way I've shipped products that generated $60M in year one, scaled platforms that are now doing $2.94B in annual revenue, and most recently spent seven years building production AI systems before most companies knew they needed them.
+I've been building software since 1985, starting as the sole developer on a 2D CAD product at Autodesk, growing that into a 17-person team, and eventually leading engineering organizations of 100+ people at companies like Autodesk and Blackboard. Along the way I've shipped products that generated $60M in year one, scaled platforms that are now doing $2.94B in annual revenue, and most recently spent seven years building production AI systems before most companies knew they needed them.
 
 I'm based in San Francisco and I'm currently looking for my next VP Engineering or CTO role, ideally somewhere building something hard with AI at the core.
 
