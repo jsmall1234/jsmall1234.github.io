@@ -219,7 +219,7 @@ Talkmap wound down in early 2026. I'm proud of what we built and how we built it
 
 ## What I'm Working On
 
-I'm currently looking for my next VP Engineering or CTO role, ideally somewhere building something meaningful with AI at the core. If you're evaluating me for a position, my resume is here and I'm happy to talk.
+I'm currently looking for my next VP Engineering or CTO role, ideally somewhere building something meaningful with AI at the core. If you're evaluating me for a position, [my resume is here](Jeffrey_Small_Resume_Expanded.pdf) and I'm happy to talk.
 
 Outside of the job search I've been building eHouseManual, a home maintenance management platform I started as an AI vibe coding experiment using Claude. I built a complete working prototype in a single weekend while doing chores around the house, which felt like a reasonable proof of concept for the idea. I've been continuing to develop it since then partly because the problem is genuinely useful and partly because building with AI tools every day is the best way I know to stay current on where things are going.
 
