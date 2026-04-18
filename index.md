@@ -47,7 +47,7 @@ During one monthly engineering meeting, the main founder John Walker announced t
 
 My hand shot up.
 
-I grew AutoSketch into a team of 12 engineers, 2 Tech Pubs, 1 Product Manager, and 2 QA people, not counting the 13 language teams supporting it internationally. Where AutoCAD was complex and difficult to learn, AutoSketch was accessible to professionals and laypeople alike. We sold it at the low end of the market and it became, at the time, Autodesk's second highest revenue product, growing from roughly $100,000 a year in 1987 to $12 million by 1994.
+I grew AutoSketch into a team of 12 engineers, 2 Tech Pubs, 1 Product Manager, and 2 QA people, not counting the 13 language teams supporting it internationally. Where AutoCAD was complex and difficult to learn, AutoSketch was accessible to professionals and laypeople alike. We sold it at the low end of the market and it became, at the time, Autodesk's second highest revenue product, growing from roughly $100,000 a year in 1987 to $5 million by 1994.
 
 It was during this period that I really developed as a manager. I spent significant time helping my team define their work and track progress while also doing my own software development. And I discovered something that took me a while to fully reckon with: it is genuinely hard to take on significant individual contributor work and give full attention to managing people at the same time.
 
@@ -154,9 +154,9 @@ The answer I kept coming back to was culture and practice. From the outset I est
 
 Alongside the testing culture I worked across the organization to move teams from older waterfall practices to Agile and Scrum. It was widely embraced and had a real impact on team visibility and the ability to pivot quickly when priorities shifted.
 
-By the end of my tenure I had scaled the BIM 360 engineering organization to over 100 engineers across 20 Scrum teams spanning the US and APAC. The product generated $60 million in revenue in its first year as the fastest growing and most successful product group in Autodesk's 35 year history at that point. It has since evolved into Autodesk Construction Cloud at $2.94 billion in annual revenue.
+By the end of my tenure I had scaled the BIM 360 engineering organization to over 100+ engineers across 20 Scrum teams spanning the US and APAC. The product generated $60 million in revenue in its first year as the fastest growing and most successful product group in Autodesk's 35 year history at that point. It has since evolved into Autodesk Construction Cloud at $2.94 billion in annual revenue.
 
-I left because after four years of that pace I was starting to burn out and was ready for a different kind of challenge. But I am genuinely proud of what that team built and how we built it.
+I left because after almost five years of that pace I was starting to burn out and was ready for a different kind of challenge. But I am genuinely proud of what that team built and how we built it.
 
 ---
 
@@ -211,7 +211,7 @@ Our first official proof of concept with a major payment corporation in early 20
 
 Over seven years we built Talkdiscovery into a production enterprise platform that processed millions of conversations for clients in telecom and financial services including AT&T, running on a 15 microservice architecture on AWS with 99.9% SLA and SOC 2 Type II compliance. I drove much of the product design myself, prototyping in Snagit and authoring all feature specifications, and I was deeply involved in the architecture and delivery of every major system component: the multi-stage AI pipeline combining classical ML with LLM based reasoning, the multi-agent orchestration layer, the evaluation framework, and the observability infrastructure.
 
-One of the things I am most proud of from this period happened in early 2025 when the company was navigating a difficult pivot from enterprise to SMB. Investors wanted to know what would be different. I proposed building connectors to every major CCaaS platform on the market to get conversations into Talkmap faster and remove the friction that had been slowing enterprise deals. Then I went and built it myself, a full suite of CCaaS integrations, in a nine day solo sprint using Claude Code. It worked, it shipped, and it gave the company and the team a real shot of momentum at a moment when they needed it.
+One of the things I am most proud of from this period happened in early 2026 when the company was navigating a difficult pivot from enterprise to SMB. Investors wanted to know what would be different. I proposed building connectors to every major CCaaS platform on the market to get conversations into Talkmap faster and remove the friction that had been slowing enterprise deals. Then I went and built it myself, a full suite of CCaaS integrations, in a nine day solo sprint using Claude Code. It worked, it shipped, and it gave the company and the team a real shot of momentum at a moment when they needed it.
 
 Talkmap wound down in early 2026. I'm proud of what we built and how we built it, and I'm looking for what comes next.
 
