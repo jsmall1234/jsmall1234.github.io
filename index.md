@@ -235,6 +235,6 @@ I'm not hard to find.
 
 The best way to reach me is email at jsmall1234@gmail.com. I'm also on LinkedIn at [linkedin.com/in/jeffreysmall](https://linkedin.com/in/jeffreysmall) and GitHub at [github.com/jsmall1234](https://github.com/jsmall1234).
 
-If you want to see something I've actually built, PropIQ is live at [propiq.to](https://www.propqi.to).
+If you want to see something I've actually built, PropIQ is live at [propiq.to](https://www.propiq.to).
 
 I'm based in San Francisco and generally available for conversations during Pacific Time business hours, though I'm flexible.
