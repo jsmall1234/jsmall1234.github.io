@@ -223,7 +223,7 @@ I'm currently looking for my next VP Engineering or CTO role, ideally somewhere 
 
 Outside of the job search I've been building PropIQ, a home maintenance management platform I started as an AI vibe coding experiment using Claude. I built a complete working prototype in a single weekend while doing chores around the house, which felt like a reasonable proof of concept for the idea. I've been continuing to develop it since then partly because the problem is genuinely useful and partly because building with AI tools every day is the best way I know to stay current on where things are going.
 
-The eHouseManual project has been a good reminder of something I have believed for a while: the gap between what one person can build alone and what a small team can build has compressed dramatically. The leverage available to someone who knows how to work with AI tools effectively is unlike anything I have seen in 35 years of building software. I find that genuinely exciting rather than threatening, which probably says something about how I think about technology in general.
+The PropIQ project has been a good reminder of something I have believed for a while: the gap between what one person can build alone and what a small team can build has compressed dramatically. The leverage available to someone who knows how to work with AI tools effectively is unlike anything I have seen in 35 years of building software. I find that genuinely exciting rather than threatening, which probably says something about how I think about technology in general.
 
 I'm also open to advisory conversations, collaborations, or just interesting discussions about where AI and engineering leadership are headed. If something here resonated with you, reach out.
 
