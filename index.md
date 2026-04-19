@@ -221,7 +221,7 @@ Talkmap wound down in early 2026. I'm proud of what we built and how we built it
 
 I'm currently looking for my next VP Engineering or CTO role, ideally somewhere building something meaningful with AI at the core. If you're evaluating me for a position, [my resume is here](Jeffrey_Small_Resume_Expanded.pdf) and I'm happy to talk.
 
-Outside of the job search I've been building eHouseManual, a home maintenance management platform I started as an AI vibe coding experiment using Claude. I built a complete working prototype in a single weekend while doing chores around the house, which felt like a reasonable proof of concept for the idea. I've been continuing to develop it since then partly because the problem is genuinely useful and partly because building with AI tools every day is the best way I know to stay current on where things are going.
+Outside of the job search I've been building PropIQ, a home maintenance management platform I started as an AI vibe coding experiment using Claude. I built a complete working prototype in a single weekend while doing chores around the house, which felt like a reasonable proof of concept for the idea. I've been continuing to develop it since then partly because the problem is genuinely useful and partly because building with AI tools every day is the best way I know to stay current on where things are going.
 
 The eHouseManual project has been a good reminder of something I have believed for a while: the gap between what one person can build alone and what a small team can build has compressed dramatically. The leverage available to someone who knows how to work with AI tools effectively is unlike anything I have seen in 35 years of building software. I find that genuinely exciting rather than threatening, which probably says something about how I think about technology in general.
 
@@ -235,6 +235,6 @@ I'm not hard to find.
 
 The best way to reach me is email at jsmall1234@gmail.com. I'm also on LinkedIn at [linkedin.com/in/jeffreysmall](https://linkedin.com/in/jeffreysmall) and GitHub at [github.com/jsmall1234](https://github.com/jsmall1234).
 
-If you want to see something I've actually built, eHouseManual is live at [ehousemanual.com](https://ehousemanual.com).
+If you want to see something I've actually built, PropIQ is live at [propiq.to](https://propqi.to).
 
 I'm based in San Francisco and generally available for conversations during Pacific Time business hours, though I'm flexible.
