@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jeffrey W. Small — VP Engineering & CTO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1A2E44;
+    --navy-deep: #0f1e2e;
+    --blue: #2563A8;
+    --blue-light: #4A90D9;
+    --slate: #4A5568;
+    --warm-white: #FAF8F5;
+    --off-white: #F0EDE8;
+    --gold: #C9A84C;
+    --text: #2D3748;
+    --light-border: #E2DDD6;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 300;
+    color: var(--text);
+    background: var(--warm-white);
+    line-height: 1.8;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 3rem;
+    background: rgba(26, 46, 68, 0.96);
+    backdrop-filter: blur(8px);
+  }
+
+  nav .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: white;
+    letter-spacing: 0.02em;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+  }
+
+  nav ul a {
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+  nav ul a:hover { color: var(--gold); }
+
+  /* HERO */
+  .hero {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+
+  .hero-img {
+    position: absolute;
+    inset: 0;
+    background: url('bodegajeff.jpg') center 30% / cover no-repeat;
+    filter: brightness(0.75);
+  }
+
+  .hero-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      transparent 30%,
+      rgba(15, 30, 46, 0.5) 60%,
+      rgba(15, 30, 46, 0.92) 100%
+    );
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 4rem 3rem 4rem;
+    max-width: 900px;
+  }
+
+  .hero-eyebrow {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    color: white;
+    line-height: 1.1;
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+  }
+
+  .hero-tagline {
+    font-size: 1.15rem;
+    color: rgba(255,255,255,0.82);
+    font-weight: 300;
+    max-width: 600px;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .hero-caption {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.5);
+    font-style: italic;
+    letter-spacing: 0.03em;
+  }
+
+  .hero-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.8rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: all 0.2s;
+  }
+
+  .btn-primary {
+    background: var(--gold);
+    color: var(--navy-deep);
+  }
+
+  .btn-primary:hover {
+    background: #e0bc5a;
+    transform: translateY(-1px);
+  }
+
+  .btn-outline {
+    border: 1.5px solid rgba(255,255,255,0.5);
+    color: white;
+  }
+
+  .btn-outline:hover {
+    border-color: white;
+    background: rgba(255,255,255,0.1);
+  }
+
+  /* SECTIONS */
+  section {
+    padding: 6rem 3rem;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  section.full-width {
+    max-width: 100%;
+    padding: 6rem 0;
+  }
+
+  .section-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--blue);
+    margin-bottom: 0.75rem;
+  }
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    color: var(--navy);
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    font-weight: 700;
+  }
+
+  p { margin-bottom: 1.4rem; font-size: 1.05rem; }
+  p:last-child { margin-bottom: 0; }
+
+  /* DIVIDER */
+  .rule {
+    width: 60px;
+    height: 3px;
+    background: var(--gold);
+    margin-bottom: 2.5rem;
+  }
+
+  /* ABOUT / WHO I AM */
+  #about {
+    background: var(--warm-white);
+  }
+
+  /* OUTDOORS BAND */
+  .outdoors-band {
+    background: var(--navy);
+    color: white;
+    padding: 5rem 3rem;
+  }
+
+  .outdoors-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .outdoors-band .section-label { color: var(--gold); }
+  .outdoors-band h2 { color: white; }
+  .outdoors-band p { color: rgba(255,255,255,0.8); }
+
+  .outdoors-img-wrap {
+    position: relative;
+  }
+
+  .outdoors-img-wrap img {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    border-radius: 2px;
+  }
+
+  .outdoors-img-wrap::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    right: 12px;
+    bottom: 12px;
+    border: 2px solid var(--gold);
+    border-radius: 2px;
+    z-index: -1;
+  }
+
+  /* PHILOSOPHY */
+  #philosophy {
+    background: var(--off-white);
+    max-width: 100%;
+    padding: 6rem 3rem;
+  }
+
+  #philosophy .inner {
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  blockquote {
+    border-left: 4px solid var(--gold);
+    padding: 1.2rem 1.8rem;
+    margin: 2.5rem 0;
+    background: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    color: var(--navy);
+    line-height: 1.6;
+    font-style: italic;
+  }
+
+  /* CAREER */
+  #career {
+    background: var(--warm-white);
+    max-width: 100%;
+    padding: 6rem 3rem;
+  }
+
+  #career .inner {
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  .role {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 2.5rem;
+    padding: 2.5rem 0;
+    border-bottom: 1px solid var(--light-border);
+  }
+
+  .role:last-child { border-bottom: none; }
+
+  .role-meta {
+    padding-top: 0.2rem;
+  }
+
+  .role-dates {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--blue);
+    margin-bottom: 0.4rem;
+  }
+
+  .role-company {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: var(--navy);
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+  }
+
+  .role-title {
+    font-size: 0.85rem;
+    color: var(--slate);
+    font-weight: 400;
+  }
+
+  .role-body p {
+    font-size: 0.98rem;
+    margin-bottom: 1rem;
+    color: var(--text);
+  }
+
+  /* PROJECTS */
+  #projects {
+    background: var(--off-white);
+    max-width: 100%;
+    padding: 6rem 3rem;
+  }
+
+  #projects .inner {
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  .project-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 2px;
+    border-left: 4px solid var(--blue);
+    margin-bottom: 1.5rem;
+  }
+
+  .project-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+  }
+
+  .project-card .project-sub {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--blue);
+    margin-bottom: 1rem;
+  }
+
+  .project-card p { font-size: 0.98rem; }
+
+  .project-card a {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--blue);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-bottom: 1.5px solid var(--blue);
+    padding-bottom: 1px;
+    transition: color 0.2s;
+  }
+
+  .project-card a:hover { color: var(--navy); border-color: var(--navy); }
+
+  /* CONTACT */
+  #contact {
+    background: var(--navy);
+    max-width: 100%;
+    padding: 6rem 3rem;
+    text-align: center;
+  }
+
+  #contact .inner {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  #contact .section-label { color: var(--gold); }
+  #contact h2 { color: white; }
+  #contact p { color: rgba(255,255,255,0.75); }
+
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2.5rem;
+  }
+
+  .contact-link {
+    display: inline-block;
+    padding: 0.7rem 1.6rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1.5px solid rgba(255,255,255,0.3);
+    color: white;
+    border-radius: 2px;
+    transition: all 0.2s;
+  }
+
+  .contact-link:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+
+  .contact-link.primary {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: var(--navy-deep);
+  }
+
+  .contact-link.primary:hover {
+    background: #e0bc5a;
+    border-color: #e0bc5a;
+    color: var(--navy-deep);
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--navy-deep);
+    padding: 1.5rem 3rem;
+    text-align: center;
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.35);
+    letter-spacing: 0.05em;
+  }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero-eyebrow { animation: fadeUp 0.6s ease both; }
+  .hero h1      { animation: fadeUp 0.6s ease 0.15s both; }
+  .hero-tagline { animation: fadeUp 0.6s ease 0.3s both; }
+  .hero-caption { animation: fadeUp 0.6s ease 0.4s both; }
+  .hero-links   { animation: fadeUp 0.6s ease 0.5s both; }
+
+  /* RESPONSIVE */
+  @media (max-width: 700px) {
+    nav { padding: 1rem 1.5rem; }
+    nav ul { gap: 1.2rem; }
+    nav ul a { font-size: 0.75rem; }
+    .hero-content { padding: 3rem 1.5rem; }
+    section { padding: 4rem 1.5rem; }
+    .outdoors-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+    .outdoors-img-wrap { order: -1; }
+    .outdoors-img-wrap img { aspect-ratio: 4/3; }
+    .role { grid-template-columns: 1fr; gap: 0.5rem; }
+    .outdoors-band, #philosophy, #career, #projects, #contact { padding: 4rem 1.5rem; }
+    .contact-links { flex-direction: column; align-items: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">Jeffrey W. Small</div>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#philosophy">Leadership</a></li>
+    <li><a href="#career">Career</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-img"></div>
+  <div class="hero-gradient"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">VP Engineering &amp; CTO &nbsp;·&nbsp; San Francisco</div>
+    <h1>Jeffrey W. Small</h1>
+    <p class="hero-tagline">Engineering leader at the intersection of product instinct, AI platform engineering, and the belief that great teams build great things.</p>
+    <p class="hero-caption">Bodega Bay, Sonoma Coast — where I go to think.</p>
+    <div class="hero-links">
+      <a href="#contact" class="btn btn-primary">Get in Touch</a>
+      <a href="Jeffrey_Small_Resume_Expanded.pdf" class="btn btn-outline">View Resume</a>
+    </div>
+  </div>
+</div>
+
+<!-- WHO I AM -->
+<section id="about">
+  <div class="section-label">Who I Am</div>
+  <div class="rule"></div>
+  <h2>Engineer. Leader. Builder.</h2>
+  <p>I'm a software engineer who became an engineering leader, and I've never really stopped being both.</p>
+  <p>I've been building software since 1985, starting as the sole developer on a 2D CAD product at Autodesk, growing that into a 17-person team, and eventually leading engineering organizations of 100+ people at companies like Autodesk and Blackboard. Along the way I've shipped products that generated $60M in year one, scaled platforms that are now doing $2.94B in annual revenue, and most recently spent seven years building production AI systems before most companies knew they needed them.</p>
+  <p>I'm based in San Francisco and currently looking for my next VP Engineering or CTO role, ideally somewhere building something hard with AI at the core.</p>
+  <p>If you're here because you're evaluating me for a role, I hope this gives you a better sense of who I am than a resume can. If you're here because you want to collaborate, build something, or just talk about where AI is going — I'm genuinely interested in that conversation too.</p>
+</section>
+
+<!-- OUTDOORS BAND -->
+<div class="outdoors-band">
+  <div class="outdoors-inner">
+    <div>
+      <div class="section-label">Beyond the Work</div>
+      <div class="rule"></div>
+      <h2>Sonoma Coast is my reset button.</h2>
+      <p>When I need to step away from the screen and clear my head, I head to the Sonoma Coast. Hiking the ridgelines above Bodega Bay, biking through the hills, breathing in the Pacific air — it's where I do some of my best thinking without trying to think at all.</p>
+      <p>The photo at the top of this page was taken on one of those days. That's me on a trail above Bodega Bay with the whole coast laid out behind me. It's hard to have a bad idea in a place like that.</p>
+      <p>I also own a cabin in Cazadero, tucked into the redwoods not far from here. It's my favorite place in the world.</p>
+    </div>
+    <div class="outdoors-img-wrap">
+      <img src="bodegajeff.jpg" alt="Jeffrey Small on the Sonoma Coast above Bodega Bay">
+    </div>
+  </div>
+</div>
+
+<!-- LEADERSHIP PHILOSOPHY -->
+<div id="philosophy">
+  <div class="inner">
+    <div class="section-label">Leadership Philosophy</div>
+    <div class="rule"></div>
+    <h2>How I Lead</h2>
+    <p>My management philosophy has an origin story.</p>
+    <p>I spent the early part of my career at Autodesk in the 1980s and 90s. The founders were brilliant — genuinely and obviously brilliant — and I learned an enormous amount just by being in the building. But as a young engineer I found them, and most of the managers around me, difficult to access. Not unfriendly, just not particularly invested in helping junior people figure things out. You were expected to sink or swim, and a lot of people sank.</p>
+    <p>I swam, but I noticed what it felt like to not have support. I noticed the questions I was afraid to ask, the architectural decisions I made in isolation that probably would have been better with fifteen minutes of guidance from someone more experienced.</p>
+
+    <blockquote>"I was going to be the manager I never had."</blockquote>
+
+    <p>That meant being genuinely accessible. Working through problems together. Whiteboarding architecture. Talking through career decisions. Being the kind of leader where people could walk up and say "I don't know how to approach this" without feeling like they were admitting failure.</p>
+    <p>It also meant high standards. Being approachable doesn't mean being easy. The best thing you can do for an engineer is help them do work they're genuinely proud of — which sometimes means pushing back, raising the bar, and having honest conversations about what good actually looks like.</p>
+    <p>Over 35+ years that philosophy has held up. The details have evolved. I lead differently at a 5-person startup than at a 100-person org, and AI has changed what's possible in ways I'm still exploring. But the core is the same: be accessible, work through problems together, hold a high bar.</p>
+  </div>
+</div>
+
+<!-- CAREER -->
+<div id="career">
+  <div class="inner">
+    <div class="section-label">Career</div>
+    <div class="rule"></div>
+    <h2>40 Years of Building</h2>
+
+    <div class="role">
+      <div class="role-meta">
+        <div class="role-dates">2018 — 2026</div>
+        <div class="role-company">Talkmap</div>
+        <div class="role-title">VP of Engineering</div>
+      </div>
+      <div class="role-body">
+        <p>Joined as employee #3 after the initial platform had stalled. Led a full technical reset, rebuilding the architecture and engineering organization from scratch. Over seven years we built Talkdiscovery into a production enterprise conversational intelligence platform processing millions of customer conversations for AT&T and other enterprise clients in telecom and financial services.</p>
+        <p>Drove much of the product design, prototyping in Snagit and authoring all feature specifications. Delivered a 15-microservice architecture on AWS at 99.9% SLA with SOC 2 Type II compliance. In early 2025, personally delivered a full suite of CCaaS platform integrations in a solo 9-day sprint using Claude Code.</p>
+      </div>
+    </div>
+
+    <div class="role">
+      <div class="role-meta">
+        <div class="role-dates">2017 — 2018</div>
+        <div class="role-company">Motimatic</div>
+        <div class="role-title">Chief Technology Officer</div>
+      </div>
+      <div class="role-body">
+        <p>Led technology strategy for a data-driven advertising platform combining motivation science with analytics. Relocated to San Luis Obispo to work directly with the team, overhauled the platform, introduced Agile practices, and delivered full GDPR compliance.</p>
+      </div>
+    </div>
+
+    <div class="role">
+      <div class="role-meta">
+        <div class="role-dates">2015 — 2017</div>
+        <div class="role-company">Blackboard</div>
+        <div class="role-title">Senior Director of Engineering</div>
+      </div>
+      <div class="role-body">
+        <p>Brought in as a change agent to fix a flagship product that was two years late and running on build cycles of two to two and a half months. Within two months we were running two releasable builds a day. Grew the organization from 2 to 15 Scrum teams (~100 engineers) across the US and APAC and brought the product successfully to market.</p>
+      </div>
+    </div>
+
+    <div class="role">
+      <div class="role-meta">
+        <div class="role-dates">2010 — 2015</div>
+        <div class="role-company">Autodesk — BIM 360</div>
+        <div class="role-title">Director of Engineering</div>
+      </div>
+      <div class="role-body">
+        <p>Returned to Autodesk after ten years away to lead BIM 360. Scaled the organization to 100+ engineers across 20 Scrum teams in the US and APAC. Established a unit testing culture and Enterprise Caliber quality standards. The product generated $60M in its first year and has since evolved into Autodesk Construction Cloud at $2.94B in annual revenue.</p>
+      </div>
+    </div>
+
+    <div class="role">
+      <div class="role-meta">
+        <div class="role-dates">2005 — 2010</div>
+        <div class="role-company">PDI Ninth House</div>
+        <div class="role-title">Senior Director of Technology</div>
+      </div>
+      <div class="role-body">
+        <p>Led technology for an award-winning eLearning company producing cinematic leadership training content featuring SAG actors. Built and scaled the engineering team, modernized practices, and delivered custom content for clients including the FBI, Navy, Air Force, Citigroup, and Goldman Sachs.</p>
+      </div>
+    </div>
+
+    <div class="role">
+      <div class="role-meta">
+        <div class="role-dates">2004 — 2005</div>
+        <div class="role-company">Kivera</div>
+        <div class="role-title">Senior Software Architect</div>
+      </div>
+      <div class="role-body">
+        <p>Led architecture for location-based services for web and mobile. Within six months delivered a real-time traffic application that won Sprint and AT&T contracts — beating competitors including Autodesk, who showed up with PowerPoint while we had working software.</p>
+      </div>
+    </div>
+
+    <div class="role">
+      <div class="role-meta">
+        <div class="role-dates">2002 — 2004</div>
+        <div class="role-company">ProcurePoint</div>
+        <div class="role-title">Director of Software Engineering</div>
+      </div>
+      <div class="role-body">
+        <p>Sequoia Capital-backed enterprise travel procurement SaaS. Led full platform rewrite and built proprietary auction technology to replace expensive third-party system. Company subsequently acquired by Sabre Corporation.</p>
+      </div>
+    </div>
+
+    <div class="role">
+      <div class="role-meta">
+        <div class="role-dates">1999 — 2002</div>
+        <div class="role-company">NearSpace</div>
+        <div class="role-title">Senior Software Architect</div>
+      </div>
+      <div class="role-body">
+        <p>Autodesk founder-backed startup building location-aware wayfinding services for Palm OS and Pocket PC. An idea ahead of its time — and a formative lesson in the difference between building something and selling it.</p>
+      </div>
+    </div>
+
+    <div class="role">
+      <div class="role-meta">
+        <div class="role-dates">1994 — 1999</div>
+        <div class="role-company">Autodesk — AutoCAD LT</div>
+        <div class="role-title">Chief Engineer</div>
+      </div>
+      <div class="role-body">
+        <p>Led engineering for AutoCAD LT, growing revenue from $15M to $72M. Hired Autodesk's first Usability Engineer and established a Usability Lab. Conceived and developed the AutoCAD Layouts feature. Named inventor on US Patent 7,366,980 — Multiple Output Device Association.</p>
+      </div>
+    </div>
+
+    <div class="role">
+      <div class="role-meta">
+        <div class="role-dates">1985 — 1994</div>
+        <div class="role-company">Autodesk — AutoSketch</div>
+        <div class="role-title">General Manager & Chief Engineer</div>
+      </div>
+      <div class="role-body">
+        <p>My hand shot up when the founder asked for volunteers to take over a product the board had rejected. Grew AutoSketch from a solo project into a 17-person team with engineering, tech pubs, and marketing all reporting directly — true GM with full P&L ownership. Grew it to Autodesk's second-highest revenue product, from $100K/year to $12M by 1994.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<div id="projects">
+  <div class="inner">
+    <div class="section-label">Personal Projects</div>
+    <div class="rule"></div>
+    <h2>What I Build for Fun</h2>
+
+    <div class="project-card">
+      <h3>eHouseManual</h3>
+      <div class="project-sub">Home Maintenance AI Platform &nbsp;·&nbsp; 2025 — Present</div>
+      <p>A platform helping homeowners manage maintenance, documentation, and costs across their properties. I built a complete working prototype in a single weekend using Claude Code — while doing chores around the house, which felt like an appropriate way to build a home maintenance app.</p>
+      <p>Built on Next.js, Supabase, Cloudinary, and Vercel. Continuing to evolve it as a way to stay current on AI-native development and explore how much one person can build with the right tools.</p>
+      <a href="https://www.ehousemanual.com" target="_blank">Visit eHouseManual →</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact">
+  <div class="inner">
+    <div class="section-label">Let's Talk</div>
+    <div class="rule" style="margin: 0.75rem auto 2rem;"></div>
+    <h2>I'm not hard to find.</h2>
+    <p>Whether you're evaluating me for a role, want to collaborate on something, or just want to talk about where AI and engineering leadership are headed — reach out.</p>
+    <div class="contact-links">
+      <a href="https://calendar.app.google/uGGiiP8kTAZeFG2N6" class="contact-link primary">Schedule a Call</a>
+      <a href="mailto:jsmall1234@gmail.com" class="contact-link">Email Me</a>
+      <a href="https://linkedin.com/in/jeffreysmall" target="_blank" class="contact-link">LinkedIn</a>
+      <a href="https://github.com/jsmall1234" target="_blank" class="contact-link">GitHub</a>
+      <a href="Jeffrey_Small_Resume_Expanded.pdf" class="contact-link">Resume</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  &copy; 2026 Jeffrey W. Small &nbsp;·&nbsp; San Francisco, CA &nbsp;·&nbsp; jsmall1234.github.io
+</footer>
+
+</body>
+</html>
